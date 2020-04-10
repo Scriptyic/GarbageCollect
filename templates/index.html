@@ -8,9 +8,26 @@
 
 {% block content %}
 {% if user.is_authenticated %}
-<a href="{% url 'dadar' %}">DADAR</a>
-<a href="{% url 'borivali' %}">BORIVALI</a>
-<a href="{% url 'chembur' %}">CHEMBUR</a>
+<p>
+Welcome <b>Admin {{ user.username }}</b> it is {% now "jS F Y H:i" %}
+</p>
+
+<d1>
+<dt><a href="{% url 'dadar' %}" target="_blank">DADAR</a></dt>
+<dd>-Smart bin test at dadar hindamata market.<br>
+	-Location: Dadar East.<br>
+	-Zone: Central</dd><br>
+<dt>
+<a href="{% url 'borivali' %}" target="_blank">BORIVALI</a></dt>
+<dd>-Smart bin test at borivali jayraj nagar.<br>
+	-Location: Borivali West.<br>
+	-Zone: Western</dd><br>
+<dt>
+<a href="{% url 'chembur' %}" target="_blank">CHEMBUR</a></dt>
+<dd>-Smart bin test at chembur GM Road.<br>
+	-Location: Chembur West.<br>
+	-Zone: Harbour</dd><br>
+
 
 
   <div class="buttontag">
